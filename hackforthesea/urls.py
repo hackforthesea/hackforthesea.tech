@@ -18,15 +18,15 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
 
-# import data.urls as data_urls
-# import core.views as core_views
+import data.urls as data_urls
+import core.views as core_views
 
 urlpatterns = [
-    # url(r'^admin/', admin.site.urls),
-    # url(r'^data/', include("data.urls")),
-    # url(r'^accounts/login', login, {'template_name': 'admin/login.html'}),
-    # url(r'^accounts/logout', logout),
-    # url(r'^accounts/register', core_views.signup),
-    # url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    url(r'^admin/', admin.site.urls),
+    url(r'^data/', include("data.urls")),
+    url(r'^accounts/login', login, {'template_name': 'admin/login.html'}),
+    url(r'^accounts/logout', logout),
+    url(r'^accounts/register', core_views.signup),
+    url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     url(r'^', include('client.urls'), name="home"),
 ]
