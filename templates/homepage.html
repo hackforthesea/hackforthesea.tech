@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-sm-12">
+        <div class="blurb">
+          Hack for the Sea is a tech community centered around an annual hackathon. We produce
+          open source projects to benefit the marine science community.
+        </div>
+
+        <form
+            class="registration-info-form content"
+            action="https://tinyletter.com/hackforthesea"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://tinyletter.com/hackforthesea', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+          >
+
+          <h6>Get Connected</h6>
+          <p style="text-align: center">
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              id="tlemail"
+              data-behavior="placeholder"
+              placeholder="your@email.com"
+            />
+          </p>
+          <input class="float-right btn btn-success" type="submit" value="Subscribe" />
+          <input type="hidden" value="1" name="embed"/>
+          <div>&nbsp;</div>
+        </form>
+      </div>
+      <div class="col-md-10 col-sm-12">
+              <!--<h3>Thanks to All, See You in 2018!</h3>-->
+            <p style="text-align: center;">
+              <a href="{% static '/photos/2017/Hack-for-the-Sea-N69A1829.jpg' %}" target="_blank">
+                <img src="{% static '/photos/2017/Hack-for-the-Sea-N69A1829.jpg' %}" alt="" style="width: 49%" />
+              </a>
+              <a href="{% static '/photos/2017/Hack-for-the-Sea-N69A1818.jpg' %}" target="_blank">
+                <img src="{% static '/photos/2017/Hack-for-the-Sea-N69A1818.jpg' %}" alt="" style="width: 49%" />
+              </a>
+            </p>
+            <p style="text-align: right">Photo Credit: Endicott College</p>
+          </form>
+
+          <iframe width="50%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338349462&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false"></iframe>
+
+          </header>
+      </div>
+    </div>
+  </div>
+{% endblock %}

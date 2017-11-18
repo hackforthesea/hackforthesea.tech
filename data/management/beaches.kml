@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Public Beaches</name>
+    <Style id="icon-193-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/193-sunny.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-193-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/193-sunny.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-193">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-193-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-193-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-22-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-22-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-22">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Plum Island</name>
+      <description>Located at the end of Plum Island Turnpike in Newburyport. The beach is adjacent to Parker River National Wildlife Refuge. Parking is available at the refuge or at several small lots near the entrance to the beach. You can find parking starting at $5, but most lots charge $10. Lots fill up quickly so get there early. There’s a jetty up the beach you can walk out on.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -70.8074856,42.7986126,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Salisbury Beach State Reservation</name>
+      <description>Located on Beach Road, off Route 1A, Salisbury. Swimming, boating, fishing and camping. Campground with bathhouses, day-use parking lot, comfort stations, playground and two boat ramps. Parking is $9. Season pass for in-state residents is $35, out of state $45.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.817528,42.833933,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cape Hedge Beach</name>
+      <description>Located at the end of South Street, Rockport. No services. Very limited private parking available; $25 sticker obtainable at Rockport Town Hall for extended visits. Season pass for non-residents $100. Shuttle trolley for visitors from downtown.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.605403,42.635383,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Long Point Wildlife Refuge (Long Point)</name>
+      <description><![CDATA[Located on Hughe&#39;s Thumb Rd, West Tisbury. 600+ acres of preserved beach, dune and woodland. Adults $3 per adult children under 15 Free and $10 per car.Gate open 9AM-6PM, last admission 5PM. Great surf on ocean side, freshwater side calm and ideal for children. Restrooms, visitor center, picnic tables.]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.632885,41.348609,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Menemsha Beach</name>
+      <description>Located off Basin Rd., Chilmark. Calm clear surf with a rocky shoreline. Lifeguards, toilets, food, showers, boat launching facility. Known for its spectacular sunset. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.766678,41.354698,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Norton Point Beach</name>
+      <description>Located on Town Lot Road, Edgartown. Swimming, shellfishing, fishing, hiking. Favorite spot for shore birds. Lifeguards, restrooms, changing facilities.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.500126,41.349044,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Oak Bluffs Town Beach</name>
+      <description>Located off Beach Road, Oak Bluffs. Gentle surf, no undertow, lifeguards, toilets, bath house, concession and food. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.553743,41.453687,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Owen Park Beach</name>
+      <description>Located on Owen Park Way off Main Street, Vineyard Haven. Gentle surf, no undertow, lifeguards, bathhouse, concession and food. The Park’s gazebo hosts the Vineyard Haven Band Concerts on alternating Sundays. Limited paid parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.601417,41.457242,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tisbury Town Beach</name>
+      <description>Located on Owen Little Way, Vineyard Haven. Small, sandy beach within residential area. No facilities. Street parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.59962,41.463323,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>40th Pole</name>
+      <description>Located on Nantucket Sound. Nicknamed “The Bathtub” for its calm surf and warm waters. Restrooms. Limited parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.192434,41.295913,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Brant Point</name>
+      <description>Close walk from downtown Nantucket. Strong current, experienced swimmers only. Unguarded. Scenic view including Brant Point Lighthouse. Limited parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.090319,41.290071,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Children’s Beach</name>
+      <description>Located on Harbor View Way, Nantucket Town. No surf, no undertow, lifeguards, restrooms, showers, playground, picnic area, snack bar, boat launching ramp. Free concerts Thursdays and Sundays. Limited parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.097108,41.287312,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cisco Beach</name>
+      <description>Located 4.5 miles from Nantucket Town on Hummock Pond Road. Heavy surf, no undertow, surf casting, lifeguards. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.155752,41.252879,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Front Beach</name>
+      <description>Located on Beach Street, Rockport. Public beach. Lifeguards in high season. Toilets, restaurants and eateries nearby. Limited meter parking. Shuttle trolley for visitors from downtown.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.620477,42.658904,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dionis Beach</name>
+      <description>Located 2.5 miles from Nantucket Town at end of  Dionis Beach Road. Gentle surf, lifeguards, restrooms. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.152243,41.292745,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Francis Street Beach</name>
+      <description>Small beach at the end of Francis Street, located five-minute walk from Main Street. Calm Harbor. Restrooms, turtle climb, kayak rentals, beautiful harbor views. Unguarded. No parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.093701,41.279897,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jetties Beach</name>
+      <description>Located on Beach Road, Nantucket Town. Gentle surf, lifeguards, restrooms, bath house, playground, equipment rentals, snack bar. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.105165,41.29622,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Madaket Beach</name>
+      <description>Located 5.5 miles from Nantucket Town on Madaket Road. Strong surf, undertow, lifeguards, restrooms, incredible sunsets. Food nearby. Known for its sunsets. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.203173,41.27059,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Miacomet</name>
+      <description>Located at the end of Miacomet Road. Consists of pond and ocean beach. Pond great for children. Heavy surf on beach, lifeguard, free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.118222,41.24332,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Long Beach</name>
+      <description>Located on Route 127A/ Seaview Street, Rockport. Lifeguards on Rockport end, toilets. Private parking available; $25 required sticker obtainable at Rockport Town Hall for extended visits. Season pass for non-residents $100. Shuttle trolley for visitors from downtown.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.619688,42.626906,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Salisbury Town Beach</name>
+      <description>Located on Beach Road, off Route 1A, Salisbury. Amusement park, lifeguards, dining. Parking daily $7 per car. Private parking lots and meters available.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.815929,42.842438,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Salisbury Beach State Reservation</name>
+      <description>Located on Beach Road, off Route 1A, Salisbury. Swimming, boating, fishing and camping. Campground with bathhouses, day-use parking lot, comfort stations, playground and two boat ramps. Parking is $9. Season pass for in-state residents is $35, out of state $45.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.815704,42.826506,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Castle Island: Pleasure Bay, M Street Beach, and Carson Beach</name>
+      <description>Located in South Boston. Take the Red Line to JFK/UMass. Beautiful picnic area, fantastic views of harbor. Run by Department of Conservation and Recreation. Showers, changing rooms, bathrooms. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -71.010132,42.336215,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nantasket Beach</name>
+      <description>Located off Route 228 in Hull. Open year round, dawn to dusk. Lifeguards on duty late June to early September. Walking, biking, swimming and restrooms (handicapped accessible), bath house. Parking $7.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.86585,42.27769,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Horseneck Beach State Reservation</name>
+      <description>Located off Route 88 at 5 John Reed Road, Westport. Boating, boat ramp, camping, fishing, hunting (restrictions), picnicking, restrooms, showers, swimming. Handicap accessible. Ocean beach and estuary habitat. Parking is $8 for in-state residents and $12 for out of state.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -71.046524,41.509156,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Malibu Beach</name>
+      <description>Offers protected swimming and bathhouse. Nearby Victory Hill Park offers an oasis of indigenous trees.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -71.049271,42.307848,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tenean Beach</name>
+      <description>Playground, tennis and basketball courts.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -71.042833,42.292358,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Crane Beach</name>
+      <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/yavjru-1YkXj2PhsxtCBIoOnxVKNQhRgeY9dqTWD3K-rXuCudi7WgjX6ubGuNm0OXYRW7ZLtU57zQXNxUsCpEAG0kfFOwjTy" height="200" width="auto" /><br><br>Located at the end of Argilla Road on Ipswich Bay in Ipswich. Gentle surf. Open 8 a.m. to sunset. Snack bar, restrooms, outdoor showers. Parking is $15 daily. Weekends $25. Half price after 3 p.m.]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh5.googleusercontent.com/proxy/yavjru-1YkXj2PhsxtCBIoOnxVKNQhRgeY9dqTWD3K-rXuCudi7WgjX6ubGuNm0OXYRW7ZLtU57zQXNxUsCpEAG0kfFOwjTy</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -70.775127,42.688934,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hingham Bathing Beach</name>
+      <description>Located off Route 3A, Hingham, before the rotary from the north, after the rotary from the south. Lifeguards in season, picnic area, restrooms, and nearby restaurants. Best experienced at high tide. Free parking</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.887426,42.247184,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Horseneck Beach State Reservation</name>
+      <description>Located off Route 88 at 5 John Reed Road, Westport. Boating, boat ramp, camping, fishing, hunting (restrictions), picnicking, restrooms, showers, swimming. Handicap accessible. Ocean beach and estuary habitat. Parking is $8 for in-state residents and $12 for out of state.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -71.057854,41.508256,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lynn Shore and Nahant Beach Reservation</name>
+      <description>Take Rt. 1A to Carroll Parkway to Nahant Rotary. Open year round, dawn to dusk. Boat ramps provide public access to Lynn Harbor. 4+ miles of waterfront promenade for walking, biking, and jogging. Ball fields, raquetball and tennis courts are available nearby Nahant Rotary. A tot lot at Ward Bathhouse where a visitor center, showers, and bathrooms are available.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.937068,42.454194,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ellisville Harbor State Park</name>
+      <description>Located 5.5 miles south of Plymouth center on route 3A. Enjoy swimming, sightseeing, and bird watching. Free parking. No facilities.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.531626,41.845844,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nelson Beach</name>
+      <description><![CDATA[Located off route 3A at Nelson’s Street Waterfront area. No lifeguard. Splash pad, playground, picnic area, boat ramp, bike path. Concessions and restrooms. Handicap accessible. Free parking.&lt;/li&gt;]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.669266,41.964388,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Plymouth Long Beach</name>
+      <description><![CDATA[Located at 1 Ryder Way off route 3A. Snack bar, restrooms, Parking $10 weekdays, $15 weekends.&lt;/li&gt;]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.625696,41.944809,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Stephens Field Beach</name>
+      <description><![CDATA[Located in Downtown Plymouth with entrances on Sandwich and Union streets. Open daily, dawn-dusk. Playground, basketball court, baseball field and four tennis courts. Small boat launch. Concessions and restrooms. Handicap accessible. Free parking.&lt;/li&gt;]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.654707,41.953107,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>White Horse Beach</name>
+      <description><![CDATA[Located at Take Rt. 3A south to Rocky Hill Road. Take a left onto the road, follow to end, take a left.  Lifeguard but no facilities, ice cream truck.&lt;/li&gt;&lt;/ul&gt;<br>&lt;b&gt;Quincy Beaches&lt;/b&gt;]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.558491,41.931018,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name> Avalon Beach</name>
+      <description>Located on Avalon Rd. at Quincy Point. Park benches, shade trees and picnic tables. On street parking is available. Nearby M.B.T.A. stop.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.973268,42.248065,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mound Street Beach</name>
+      <description>Located on Mound St. in Quincy Point. Picnic tables, soccer fields and playgrounds. Free parking. Nearby MBTA stop.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.977237,42.251838,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Good Harbor Beach</name>
+      <description>Located off Route 127 in Gloucester. Lazy rolling surf, picnic tables, concession stand, snack bar, showers, bathrooms, lifeguards and bathhouse. Parking is $20. Weekends $25.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.632112,42.620744,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wollaston Beach</name>
+      <description>Located on Quincy Shore Drive, Quincy. Open year round, dawn to dusk. Bathhouse open July to September. Play area, lookout tower and picnic tables at south end. Historic site and woodland trails at north end. Popular for jogging and cycling. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -71.009434,42.276801,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Craigville Beach</name>
+      <description>Centerville, off Route 28, Barnstable. Gentle surf, no undertow. Lifeguards, restrooms. Parking is $15. Weekly and season visitor passes of $50 and $200 purchased from Recreation Department.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.33988,41.636326,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sandy Neck Beach</name>
+      <description>Off Route 6A, West Barnstable. Moderate surf, Lifeguards, toilets, bath house and snack bar. Parking is $15. Non-resident season pass $200.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.379405,41.739169,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Monument Beach</name>
+      <description>Located off Route 28, Bourne. Gentle surf, no undertow, lifeguards, toilets and snack bar. Parking sticker required. Sticker is $30 from Town Hall with proof of a minimum 30-day residency. Others may walk or bicycle in.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.615193,41.714931,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Breakwater Beach</name>
+      <description>Located off Route 6A, Brewster. Moderate surf, no undertow, toilets. Parking is $15. Beach stickers are $50 weekly; $125 for season pass. Passes must be purchase from the visitor center behind Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.084105,41.768431,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Crosby Landing</name>
+      <description>East Brewster, Crosby Landing, off Route 6A. Moderate surf, no undertow, toilets. Parking is $15 daily. Weekly $50. Non-resident season pass is $125. Resident season pass is $15.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.031662,41.785329,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ellis Landing</name>
+      <description>Located off Route 6A, at the end of Ellis Landing Road, East Brewster. Moderate surf, no undertow, toilets Parking is $15 daily. Weekly $50. Non-resident season pass is $125. Resident season pass is $15.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.055909,41.775664,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Linnel's Landing]]></name>
+      <description>Located off Route 6A, East Brewster. Moderate surf, no undertow, toilets, handicap ramp mid-June through Labor Day. Parking is $15 daily. Weekly $50. Non-resident season pass is $125. Resident season pass is $15.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.038443,41.782017,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Paine's Creek Beach]]></name>
+      <description><![CDATA[Located off Route 6A, at the end of Paine&#39;s Creek Road, West Brewster. Moderate surf, no undertow, toilets. Parking is $15. Weekly $50. Non-resident season pass is $125. Resident season pass is $15.]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.114188,41.761161,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Robbins Hill Beach</name>
+      <description>Located off Route 6A, off Robbins Hill Road, West Brewster. Moderate surf, no undertow, toilets. Parking daily $15. Weekly $50. Nonresident season pass $125. Resident season pass $15.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.111951,41.762185,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Stage Fort Park</name>
+      <description>Stage Fort Park -- Located off Route 127 in Gloucester. Two beaches. Picnic tables and picnic areas, playground equipment, snack bar and lifeguards. Parking $10.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.677431,42.605632,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Saint's Landing]]></name>
+      <description>Located off Route 6A, Brewster. Moderate surf, no undertow, toilets. Parking is $15. Weekly $50. Non-resident season pass $125. Resident season pass $15.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.101732,41.764058,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cockle Cove Beach</name>
+      <description>Located off Route 28, Cockle Cove Road, South Chatham. Gentle surf, no undertow, lifeguards, snack bar, toilets. Parking is $15. Weekly $60. Non-resident season pass $125. Resident season pass $25.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.011599,41.673,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hardings Beach</name>
+      <description>Located off Route 28, West Chatham. Gentle surf, no undertow, lifeguards, restrooms, snack bar, wheelchair accessible, free for U.S. military personnel. Parking is $15. Weekly $60. Non-resident season pass $125. Residents season pass $25.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.998783,41.669097,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Oyster Pond Beach</name>
+      <description>Located off Route 28, Chatham. Quite, small beach on saltwater inlet, warm and calm water, near downtown, undertow, lifeguards, showers and toilets. Free parking with space for 40 cars.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.963027,41.680865,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ridgevale Beach</name>
+      <description>Located off Route 28, South Chatham. Lifeguards, snack bar and toilets. Parking is $15. Weekly $60. Season pass is $125.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.006063,41.673349,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jones Park</name>
+      <description>Located at 66 Saint John St., Dartmouth. Open 9 a.m. to 5 p.m. Lifeguards on duty during summer moths. Parking is $10. Season pass is $50.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.931044,41.605303,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Apponagansett Recreation Area</name>
+      <description>77 Gulf Road, Dartmouth. Scenic views of harbor. Playground, picnic area, volleyball court. Lifeguards on duty 9 a.m. to 5 p.m. Parking is $10. Season pass is $50.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.953768,41.584353,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chapin Beach</name>
+      <description>Located off Route 6A, Dennis. Moderate surf, restrooms. Known for tidal flats Fishing, four wheel vehicles allowed. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.236304,41.730122,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Corporation Beach</name>
+      <description>Located off Route 6A. Light surf, warm water, tidal flats. Lifeguards, toilets, bath house, snack bar, playground. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.188244,41.75136,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Depot Street Beach</name>
+      <description>Located off Route 28, Dennis. No lifeguard. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.124879,41.655046,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wingaersheek Beach</name>
+      <description>Located off Route 127 North, exit 13, at the end of Atlantic Street in Gloucester. Moderate surf, snack bar, lifeguards, toilets, showers. Parking is $20. Weekends $25.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.68964,42.652016,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Haigis Beach</name>
+      <description>Located off Route 28 at 97 Old Wharf Road. Gentle surf, no undertow, lifeguards, toilets, snack bar. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.143473,41.650868,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Howes Beach</name>
+      <description>Located off Route 6A at the end of Howes Street. Lifeguards, toilets, snack bar. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.185304,41.749748,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Inman Beach</name>
+      <description>Located in Dennis Port, off Route 28 at the end of Inman Road. Lifeguards, toilets, snack bar. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.121403,41.655611,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mayflower Beach</name>
+      <description>Located off Route 6A, Dennis. Lifeguards, toilets, snack bar, handicap accessible. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.218757,41.741142,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Raycroft Beach</name>
+      <description>Located in Dennis Port, off Route 28. No lifeguard. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.127403,41.65416,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sea Street Beach</name>
+      <description>Located in Dennis Port, off Route 28. Lifeguards, bathhouse, food. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.134538,41.652379,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sea Street Beach</name>
+      <description>Located off Route 6A at the end of Sea Street, East Dennis. Lifeguards, toilets, snack bar. Parking is $15. Weekly $50. Seasonal pass is $200.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.147788,41.756755,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>South Village Road Beach</name>
+      <description>Located in West Dennis, off Route 28. Lifeguards, toilets, snack bar. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.159072,41.652577,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>West Dennis Beach</name>
+      <description>Located in West Dennis, off Route 28. Lifeguards, toilets, bath house, snack bar, handicap accessible. Parking is $20 daily, $25 on weekends. Weekly parking for $75. Non-resident season pass is $300, seasonal residents are $150 and residents $40. Passes can be purchased at Town Hall.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.185068,41.649491,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Campground Beach</name>
+      <description>Located off Route 6, Eastham. Moderate surf. Parking is $15 daily. Weekends are $18. Weekly $65. Two-week pass $100. Seasonal pass $180.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.005556,41.851069,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Singing Beach</name>
+      <description>Located at 119 Beach St., Manchester-by-the-Sea. $5 per person walk-on fee. Limited number of non-resident parking spaces Monday through Thursday for $25. Resident only parking Friday through Sunday and Aug. 30 to Sept. 30.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.759957,42.569596,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Coast Guard Beach</name>
+      <description>Located off Route 6, Eastham. Lifeguards, toilets, bath house. Parking is $15 daily. Weekends are $18. Weekly $65. Two-week pass $100. Seasonal pass $180.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.952132,41.85881,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cooks Brook Beach</name>
+      <description>Located in North Eastham. Moderate surf, toilets. Parking is $15 daily. Weekends are $18. Weekly $65. Two-week pass $100. Seasonal pass $180.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.007675,41.864759,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>First Encounter Beach</name>
+      <description>Located off Route 6, Eastham. Moderate surf, toilets. Parking is $15 daily. Weekends are $18. Weekly $65. Two-week pass $100. Seasonal pass $180.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.003402,41.821393,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nauset Light Beach</name>
+      <description>Located off Route 6, Eastham, on Nauset Light Beach Road, one mile north of Coast Guard Beach. Moderate surf, lifeguards, toilets, bath house. Parking is $15 daily. Weekends are $18. Weekly $65. Two-week pass $100. Seasonal pass $180.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.954323,41.867601,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sunken Meadow Beach</name>
+      <description>Located off Route 6, Eastham. Moderate surf. Parking is $15 daily. Weekends are $18. Weekly $65. Two-week pass $100. Seasonal pass $180.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.008681,41.871842,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Thumpertown Beach</name>
+      <description>Off Herring Brook Road, Eastham. Parking is $15 daily. Weekends are $18. Weekly $65. Two-week pass $100. Seasonal pass $180.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.0048,41.8436,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Menauhant Beach</name>
+      <description>Located off Route 28, East Falmouth. Longest beach on Falmouth. Gentle surf, no undertow, lifeguards, snack bar, toilets, showers. Parking is $10 daily. Weekly $60. Two weeks $70. Three weeks $80. Four weeks $90. Seasonal $200.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.556071,41.549343,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Old Silver Beach</name>
+      <description>Located in North Falmouth, off Route 28. Gentle surf, no undertow, warm water, lifeguards, toilets, bath house, snack bar. Parking is $20 daily. Weekly $60. Two weeks $70. Three weeks $80. Four weeks $90. Seasonal $200</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.639274,41.625051,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Surf Drive Beach</name>
+      <description>Located off Route 28A, Falmouth. Gentle surf, lifeguards, toilets, bath house, snack bar. Accessible from Shining Sea Bike Path. Parking is $15 daily. Weekly $60. Two weeks $70. Three weeks $80. Four weeks $90. Seasonal $200</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.617371,41.542437,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kalmus Park Beach</name>
+      <description>Located on Ocean Street, Hyannis. Lifeguards, toilets, bath house, picnic area, snack bar. Parking is $15 weekdays, $20 weekends. Weekly $50. Nonresidents season pass $200.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.277481,41.635171,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Long Beach</name>
+      <description>Located off Route 1A, Nahant. Open dawn to dusk. Restrooms, bathhouse, first aid, concession, ball field, bandstand, boat ramp. Parking is $3. Free street parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.93606,42.448541,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sea Street (Keyes Beach)</name>
+      <description>Located on Sea Street, Hyannis. Lifeguards, toilets, bath house, picnic area, snack bar. Parking is $15. Weekly $50. Nonresidents season pass $200. Residents season pass $25.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.290298,41.636115,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Veterans Park Beach</name>
+      <description>Located on Ocean Street, Hyannis. Lifeguards, toilets, food, lots of seashells on beach. Parking is $15. Weekly $50. Nonresidents season pass is $200.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.278071,41.640997,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nauset Beach</name>
+      <description>Located in East Orleans, off Route 28. Strong surf, undertow, lifeguards, toilets, bath house, snack bar. Parking is $15. Weekly $50. Season pass $110.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.93668,41.787225,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Skaket Beach</name>
+      <description>Located off Route 6A on the east end of the Cape Cod Canal, Orleans. No surf. Lifeguards, toilets, bath house, snack bar. Parking is $15. Visitors staying in town can get weekly passes for $50 and season passes for $110.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.016298,41.794576,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Scusset Beach State Reservation</name>
+      <description>Located on Scusset Beach Road, Sandwich. Open through Columbus Day weekend. Lifeguard, swimming, food concession, restrooms, electricity, water and parking available. Parking is $7. In-state residents season pass $35. Out of state residents $45.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.500759,41.779401,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Herring Cove</name>
+      <description>Located at the end of Route 6, Provincetown. Part of the Cape Cod National Seashore. Calm surf, lifeguards, food concession, full facilities. Right side of the beach is more family-oriented. Parking is $15. Season pass $45. Good for all Cape Cod National Seashore beaches.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.215447,42.043381,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Race Point Beach</name>
+      <description>Located off Route 6 at the end of Race Point Road, Provincetown. National Seashore Park. Surf, lifeguards, toilets, changing facilities. Parking is $15. Season pass $45. Handicapped accessible.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.219717,42.079464,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Town Neck Beach </name>
+      <description>Located off Route 6A at end of Wood Avenue, Sandwich. Toilets, snack bar, boardwalk, scenic dunes. Parking is $10. Nonresidents season pass $90.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.483582,41.766719,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Corn Hill Beach</name>
+      <description>Located off Route 6, Truro. Toilets. Parking is $10. Weekly $30. Nonresidents season pass $150. Residents season pass $10.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.079255,42.000445,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Head of the Meadow Beach</name>
+      <description>Located in North Truro. Strong surf, undertow. Lifeguards, toilets. Parking is $15. Season pass $45. Good for all Cape Cod National Seashore beaches.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.080183,42.051456,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Revere Beach</name>
+      <description><![CDATA[MBTA Blue Line to Revere Beach or Wonderland stations. Lays claim to being America&#39;s first public beach. Bath house, bandstand for concerts and many shade shelters.]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.990884,42.405254,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cahoon Hollow Beach</name>
+      <description>Located on Cahoon Hollow Road, off Route 6, Wellfleet. Moderate surf, undertow. Lifeguards, toilets, snack bar. One of the most popular beaches in Wellfleet. Breathtaking views. Visitor permit only to those staying in Wellfleet, no daily passes. Three-day permit is $45. One week is $80. Two week is $150 and seasonal is $250. Residents, $20.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.984742,41.944118,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Marconi Beach</name>
+      <description>Six miles north of Salt Pond Visitor Center, off Route 6 in Wellfleet. Lifeguards, toilets, bath house. Popular for surfing and boogie boarding. Parking is $15. Season pass $45. Motorcycles $5, walk-ins $3.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.964864,41.890977,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mayo Beach</name>
+      <description>Kendrick Avenue at Town Pier, Wellfleet. Calm, warm water. Rock jetty. Toilets. Free parking in small lot. Larger town lot nearby at town pier</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.032783,41.930319,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>White Crest Beach</name>
+      <description><![CDATA[Located off Route 6, Wellfleet. Strong surf, undertow, steep drop-off, lifeguards, toilets, snack bar. White Crest is Wellfleet&#39;s only daily park and pay beach. Parking is $20 per day.]]></description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -69.979933,41.934174,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bass River Beach</name>
+      <description>Located off Route 28 on South Shore Drive, Yarmouth. Gentle surf, lifeguards, toilets, bath house, boat ramp, snack bar, handicap accessible. Parking is $15. Weekly pass $70. Residents season pass $35.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.198785,41.645011,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bayview Beach</name>
+      <description>Located on Bayview Street, Yarmouth. Gentle surf, lifeguards, toilets, bath house, boat ramp. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.273055,41.647053,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Parkers River Beach</name>
+      <description>Located off Route 28, Yarmouth. Toilets, snack bar. Parking is $15. Weekly pass $70. Residents season pass $35.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.211338,41.641558,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sea Gull Beach</name>
+      <description>Located on South Sea Avenue, West Yarmouth. Lifeguards, toilets, bath house, snack bar. Parking is $15. Weekly pass $70. Residents season pass $35.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.224888,41.635793,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Seaview Beach</name>
+      <description>Located off Route 28, Yarmouth. Lifeguards and portable bathrooms. Parking is $15. Weekly pass $70. Nonresidents season pass is $125. Residents season pass is $35.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.214229,41.640098,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Spectacle Island</name>
+      <description>Located on Spectacle Island and accessed via passenger ferry from Boston’s Best Cruises on Long Wharf. Panoramic views of harbor. Lifeguard, walking trails, visitor center and cafe. Ferry tickets from www.bostonsbestcruises.com. Adults $15, children $9 for round-trip ticket.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.98781,42.323409,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Back Beach </name>
+      <description>Located on Beach Street, Rockport. Public beach. Rocks and sand, gentle current, toilets. Limited meter parking. Shuttle trolley for visitors from downtown.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.623829,42.661468,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Castle Island: Pleasure Bay, M Street Beach, and Carson Beach</name>
+      <description>Located in South Boston. Take the Red Line to JFK/UMass. Beautiful picnic area, fantastic views of harbor. Run by Department of Conservation and Recreation. Showers, changing rooms, bathrooms. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -71.023479,42.335802,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>East Beach (Cape Pogue Wildlife Refuge and Wasque Reservation)</name>
+      <description>Located on Chappa-quiddick Island, Edgartown. One-thousand acres of preserved land. Beautiful barrier beach with sandy shoreline, salt marsh and pond. Swimming, fishing, bird-watching, and hiking. Restrooms and picnic tables. May 30-Oct. 15: Adults $3 children under 15 Free. Gatehouse open 9AM-4:45PM. Limited free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.451031,41.365988,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Eastville Beach</name>
+      <description>Located between Vineyard Haven and Oak Bluffs, a 15 minute walk along Long Beach Road from Vineyard Haven ferry. Perfect for watching yachts, sailboats, and ferries pass through the harbor. Limited free parking. No facilities.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.587384,41.459183,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fuller Street Beach</name>
+      <description>Located at the end of Fuller St. near Lighthouse Beach in Edgartown. Small parking fee. Looks out at scenic Cape Pogue lighthouse. Unguarded, no facilities.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.505308,41.3955,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gay Head Public Beach (Moshup Beach)</name>
+      <description>The beach is approximately a ten-minute walk off Moshup Trail parking lot, Aquinnah. Known for its great surf. Part of the beach is designated for nude swimming/sunbathing. Restrooms. Parking $15.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.823171,41.331935,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Joseph A. Sylvia State Beach</name>
+      <description>Located at 180 Beach Road between Oak Bluffs and Edgartown.  Lifeguards, restrooms, food, little surf, no undertow. Street parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.552053,41.420944,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Katama Beach (South Beach)</name>
+      <description>Located on Atlantic Drive, Edgartown. Strong current, undertow, good for surfing. Protected salt pond on opposite side. Surf fishing allowed, lifeguards, restrooms, changing facilities, food. Free parking.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.524244,41.349253,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lake Tashmoo Town Beach</name>
+      <description>Located at Herring Creek on Lake Tashmoo, Vineyard Haven. No facilities. Lake-like, favorite for boaters traveling through the Sound.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.63164,41.466978,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lighthouse Beach</name>
+      <description>A harbor beach off North Water Street, Edgartown. Tame surf, rocky sand. Free, but no parking lot.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.50269,41.390791,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name> Lobsterville Beach</name>
+      <description>Located along Lobsterville Road, Aquinnah. Two miles of tranquil Vineyard Sound beach and dune land including a seagull nesting area. Favorite fishing spot. Open to the public, but parking is prohibited on Lobsterville Road. Closest restrooms at Aquinnah Circle.</description>
+      <styleUrl>#icon-193</styleUrl>
+      <Point>
+        <coordinates>
+          -70.791092,41.34989,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
