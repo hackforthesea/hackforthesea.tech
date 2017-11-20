@@ -64,3 +64,16 @@ form p > span {
 form p > span, form > ul {
     font-size: 12px;
 }
+
+body > footer {
+    border-top: 3px solid black;
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body > footer .logo {
+    max-width: 150px;
+}
