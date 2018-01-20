@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container content">
+    <h2>Glossary</h2>
+
+    <dl>
+    {% for term in terms %}
+        <dt>{{ term.term }}</dt>
+        <dd>{{ term.definition }}</dd>
+    {% endfor %}
+    </dl>
+</div>
+{% endblock %}

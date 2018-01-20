@@ -17,9 +17,14 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
+from django.conf.urls.static import static
 
 import data.urls as data_urls
 import core.views as core_views
+
+from h4ts_glossary.views import glossary_index
+
+import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,5 +33,8 @@ urlpatterns = [
     url(r'^accounts/logout', logout),
     url(r'^accounts/register', core_views.signup),
     url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    url(r"^podcasts/", include("podcasting.urls")),
+    url(r"^feeds/podcasts/", include("podcasting.urls_feeds")),
+    url(r"^glossary/", glossary_index),
     url(r'^', include('client.urls'), name="home"),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

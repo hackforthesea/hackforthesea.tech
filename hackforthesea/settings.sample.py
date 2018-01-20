@@ -46,6 +46,11 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
+SITE_ID = 1
+SITE_URL = 'https://yourdomain.com' # No ending slash
+
+JUPYTERHUB_PORT="8000"
+
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -71,6 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'client.context_processors.site'
             ],
         },
     },
@@ -162,3 +168,22 @@ AWS_SES_REGION_ENDPOINT = 'email.us-east-1.amazonaws.com'
 
 
 LOGIN_REDIRECT_URL = '/oauth/applications/'
+
+
+# Podcasting Thumbnails
+# https://django-podcasting.readthedocs.io/en/latest/installation.html
+
+THUMBNAIL_ALIASES = {
+    "podcasting.Show.original_image": {
+        "sm": {"size": (120, 120)},
+        "lg": {"size": (550, 550)},
+        "itunes_sm": {"size": (144, 144)},
+        "itunes_lg": {"size": (1400, 1400)},
+    },
+    "podcasting.Episode.original_image": {
+        "sm": {"size": (120, 120)},
+        "lg": {"size": (550, 550)},
+        "itunes_sm": {"size": (144, 144)},
+        "itunes_lg": {"size": (1400, 1400)},
+    },
+}
