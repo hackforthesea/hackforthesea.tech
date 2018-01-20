@@ -8,4 +8,4 @@ from .models import GlossaryTerm
 def glossary_index(request):
     terms = GlossaryTerm.objects.all()
 
-    return render(request, "glossary.html", { terms: terms })
+    return render(request, "glossary.html", { 'terms': terms })
