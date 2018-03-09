@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.contrib.auth.views import login, logout
 from django.conf.urls.static import static
 
+from beachcrab.views import beachcrabtext
 import data.urls as data_urls
 import core.views as core_views
 
@@ -36,5 +37,6 @@ urlpatterns = [
     url(r"^podcasts/", include("podcasting.urls")),
     url(r"^feeds/podcasts/", include("podcasting.urls_feeds")),
     url(r"^glossary/", glossary_index),
+    url(r"^beachcrabtext", beachcrabtext),
     url(r'^', include('client.urls'), name="home"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
