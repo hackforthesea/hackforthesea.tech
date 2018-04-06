@@ -24,7 +24,7 @@ import data.urls as data_urls
 import core.views as core_views
 
 from h4ts_glossary.views import glossary_index
-
+from savethedate.views import SaveTheDate
 import settings
 
 urlpatterns = [
@@ -38,5 +38,6 @@ urlpatterns = [
     url(r"^feeds/podcasts/", include("podcasting.urls_feeds")),
     url(r"^glossary/", glossary_index),
     url(r"^beachcrabtext", beachcrabtext),
-    url(r'^', include('client.urls'), name="home"),
+    url(r'^', SaveTheDate.as_view(), name="home"),
+    # url(r'^', include('client.urls'), name="home"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

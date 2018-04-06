@@ -7,20 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:url"                content="http://hackforthesea.com" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Hack for the Sea 2018 - Coming Soon" />
-    <meta property="og:description"        content="Thank you to all the participants of the 2017 Hack for the Sea! 2018 info coming soon." />
-    <meta property="og:image"              content="http://hackforthesea.com/images/ocean-banner.jpg" />
-
-    <title>Hack for the Sea 2018 :: Coming Soon</title>
-    <meta name="description" content="Hack for the Sea 2018 - Coming Soon">
-    <meta name="author" content="Hack for the Sea">
+    <title>Save the Date! Hack for the Sea - Sept 21-23 2018 in Gloucester, MA</title>
+    <meta name="description" content="The 3rd Annual Hack for the Sea is a marine hackathon where participants take on challenges in marine science, research, and industry.">
+    <meta name="author" content="The Marine Institute of Science and Technology (MIST)">
     <meta name="msvalidate.01" content="FFFAEFFC69F1F6B9AE9240403E435213" />
 
-    <link href="{% static "assets/css/bootstrap.min.css" %}" rel="stylesheet">
-    <link href="{% static "assets/css/main.css" %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: sans-serif;
+        font-weight: 100;
+      }
 
+      .h4ts-button {
+        background: #c8eef9;
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+        box-shadow: 2px 2px 0px #9086c2;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .h4ts-button span {
+        display: block;
+        text-align: left;
+        text-decoration: underline;
+        margin-top: .5em;
+      }
+    </style>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,24 +44,75 @@
 
       ga('create', 'UA-98312683-1', 'auto');
       ga('send', 'pageview');
+
+      document.onclick = function logGAEvents(e) {
+        console.log(e.target.id);
+
+        if(e.target.id === "addeventatc1") {
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Save the Date',
+            eventAction: 'Click',
+            eventLabel: 'Add Event to Calendar'
+          });
+          console.log("Add to calendar event recorded");
+        }
+
+        if(e.target.id === "subscribeToMailingList") {
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Save the Date',
+            eventAction: 'Click',
+            eventLabel: 'Subscribe to Mailing List'
+          });
+          console.log("Subscribe to Mailing List event recorded");
+        }
+
+        if(e.target.id === "inviteYourFriends") {
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Save the Date',
+            eventAction: 'Click',
+            eventLabel: 'Invite Friends Via Email'
+          });
+          console.log("Invite Friends Via Email event recorded");
+        }
+      }
     </script>
   </head>
 
   <body>
-    <div id="page">
-      {% include "partials/nav.html" %}
-      {% block content %}{% endblock %}
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="sidebar offset-md-1 col-md-3">
+          <h1 style="text-align: center"><img src="{% static '/assets/img/h4ts2018-logo.jpg' %}" alt="Hack for the Sea 2018"/></h1>
+
+          {% block sidebar %}{% endblock %}
+        </div>
+        <div class="col-md-7">{% block content %}{% endblock %}</div>
+      </div>
+
+    <div class="pre-footer">
+      {% block prefooter %}{% endblock %}
     </div>
-    <footer>
+    <footer style="text-align: center;">
+      {% include "partials/follow-us-on-twitter.html" %}
+
       Powered by <a href="https://goo.gl/ucxdcB" target="_blank">
-        <img class="logo" src="{% static 'images/dot-tech.png' %}" alt=".TECH Domains" />
+        <img class="logo" width=120 src="{% static 'images/dot-tech.png' %}" alt=".TECH Domains" />
+      </a>
+
+      <a href="https://balsamiq.com" target="_blank">
+        <img class="logo" width=120 src="{% static 'images/balsamiq_logo.png' %}" alt=".TECH Domains" />
       </a>
     </footer>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

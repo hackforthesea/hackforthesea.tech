@@ -1,0 +1,25 @@
+<script>
+    function mailtoInvite() {
+        var textarea = document.getElementById("emails-to-invite");
+        var emails = textarea.value.split("\n");
+        var mailtoLink = "mailto:" + emails.join(",");
+        mailtoLink += "?subject=Check out Hack for the Sea&body=Hey, just saw this cool marine science hackathon and thought of you. Check it out: https://hackforthesea.tech";
+        console.log(mailtoLink);
+        var mailtoTag = document.createElement("a");
+        mailtoTag.href=mailtoLink;
+        document.body.appendChild(mailtoTag);
+        mailtoTag.click();
+        mailtoTag.remove();
+    }
+</script>
+<div style="float: left; margin-right: 14px; position: relative;">
+    <h5>2</h5>
+</div>
+<div>
+    Invite your friends via email
+    <form style="margin-top: 5px; margin-left: 26px;">
+        <textarea id="emails-to-invite" rows=4 style="width: 300px; margin-top: 10px;" placeholder="One email per line..."></textarea>
+        <br />
+        <button id="inviteYourFriends" style="width: 210px" class="h4ts-button" onclick="mailtoInvite(); return false;">Invite Your Friends</button>
+    </form>
+</div>

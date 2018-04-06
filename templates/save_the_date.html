@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block sidebar %}
+<center>
+    <h3 style="font-size: 28px; line-height: 16px; white-space: nowrap;">Sept 21-23, 2018</h3>
+    <h3 style="font-size: 20px; line-height: 26px; white-space: nowrap;">American Legion, Post 3</h3>
+    <h3 style="font-size: 32px; line-height: 19px; white-space: nowrap;">Gloucester, MA</h3>
+
+    <br />
+    {% include "partials/add-event-to-calendar.html" %}
+    <br />
+</center>
+
+<em style="font-size: 15px; margin-top: 12px; margin-bottom: 12px; display: block; font-family: script;">
+    To all marine professionals, programmers, scientists, educators, hobbyists, writers,
+    naturalists, marketers, videographers, students, and lovers of the sea...
+    <strong>join us!</strong>
+</em>
+{% endblock  %}
+
+{% block content %}
+<div>
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+            The <strong>3rd Annual Hack for the Sea</strong> is a marine hackathon
+            where participants take on challenges in marine science, research, and industry.
+        </div>
+        <div class="offset-md-1 col-md-10" style="padding: 10px; margin: 1em auto; background: #ffeaf6; border-radius: 10px">
+            <p>
+                <strong>For info about tickets, podcasts, travel, and more:</strong>
+            </p>
+            {% include "partials/sign-up-for-mailing-list.html" %}
+            <br />
+            {% include "partials/invite-your-friends.html" %}
+        </div>
+
+<blockquote class="offset-md-1 col-md-5" style="font-size: 13px; margin-top; 1em;">
+    "As a naturalist educator who is not a tech person, I wasn’t sure what I would
+    contribute. As it turned out, this was a wonderful opportunity for people from all sectors
+    to collaborate on ideas that improve the environment.”<br /><br />
+    <strong>- Jessica Kagle, Executive Director, Kestrel Educational Adventures.</strong>
+</blockquote>
+
+<blockquote class="col-md-5" style="font-size: 13px;">
+    "Hack for the Sea brought together ocean experts from the local and national level along
+    with a terrific group of hardware hackers, software engineers, and product designers
+    I can't wait for this year's event.”<br /><br />
+    <strong>- Jim Salem, Director Of Software Development, Oracle Cloud Infrastructure</strong>
+</blockquote>
+    </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://www.schema.org",
+  "@type": "Event",
+  "name": "Hack for the Sea 2018",
+  "url": "http://hackforthesea.tech",
+  "description": "Hack for the Sea is a marine hackathon where participants take on some of the toughest challenges present in marine science, research, and industry.",
+  "startDate": "09/21/2018 11:00PM",
+  "endDate": "09/23/2018 09:00PM",
+  "image": "{% static '/assets/img/h4ts2018-logo.jpg' %}",
+  "location": {
+    "@type": "Place",
+    "name": "American Legion Post 3",
+    "sameAs": "http://www.post3.org",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 Washington St",
+      "addressLocality": "Gloucester",
+      "addressRegion": "MA",
+      "postalCode": "01930",
+      "addressCountry": "USA"
+    }
+  }
+}
+</script>
+{% endblock %}
