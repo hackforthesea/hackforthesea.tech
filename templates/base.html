@@ -83,16 +83,6 @@
           });
           console.log("Subscribe to Mailing List event recorded");
         }
-
-        if(e.target.id === "inviteYourFriends") {
-          ga('send', {
-            hitType: 'event',
-            eventCategory: 'Save the Date',
-            eventAction: 'Click',
-            eventLabel: 'Invite Friends Via Email'
-          });
-          console.log("Invite Friends Via Email event recorded");
-        }
       }
     </script>
   </head>
@@ -114,7 +104,6 @@
       {% block prefooter %}{% endblock %}
     </div>
     <footer style="text-align: center;">
-      {% include "partials/follow-us-on-twitter.html" %}
 
       Powered by <a href="https://goo.gl/ucxdcB" target="_blank">
         <img class="logo" width=120 src="{% static 'images/dot-tech.png' %}" alt=".TECH Domains" />

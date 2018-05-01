@@ -38,6 +38,6 @@ urlpatterns = [
     url(r"^feeds/podcasts/", include("podcasting.urls_feeds")),
     url(r"^glossary/", glossary_index),
     url(r"^beachcrabtext", beachcrabtext),
-    url(r'^', SaveTheDate.as_view(), name="home"),
+    url(r'^$', SaveTheDate.as_view(), name="home"),
     # url(r'^', include('client.urls'), name="home"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
