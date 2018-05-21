@@ -24,7 +24,8 @@ import data.urls as data_urls
 import core.views as core_views
 
 from h4ts_glossary.views import glossary_index
-from savethedate.views import SaveTheDate
+from h4ts_hackathon.views import HackathonView
+from h4ts_savethedate.views import SaveTheDateView
 import settings
 
 urlpatterns = [
@@ -38,6 +39,8 @@ urlpatterns = [
     url(r"^feeds/podcasts/", include("podcasting.urls_feeds")),
     url(r"^glossary/", glossary_index),
     url(r"^beachcrabtext", beachcrabtext),
-    url(r'^$', SaveTheDate.as_view(), name="home"),
+    url(r'^(?P<code>)(?<![A-Z])[A-Z]{3}$', HackathonView.as_view(), name="hackathon"),
+    # TODO: Gloucester -> GLO alias
+    url(r'^$', SaveTheDateView.as_view(), name="home"),
     # url(r'^', include('client.urls'), name="home"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
