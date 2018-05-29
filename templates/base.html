@@ -34,15 +34,24 @@
         font-family: sans-serif;
         font-weight: 100;
       }
+      
+      a { font-weight: 400; }
+        
+      a, a:hover, a:visited {
+        color: #9b4fcc;
+        text-decoration: underline;
+      }
 
       .h4ts-button {
-        background: #62c3ef;
-        border-radius: 8px;
-        font-weight: bold;
+        background: #2b5bfc;
+        border-radius: 3px;
         border: none;
         box-shadow: 2px 2px 5px #0f210e;
         padding: 10px;
         cursor: pointer;
+        margin: 1.5em auto;
+        text-decoration: none;
+        font-weight: bold;
       }
 
       .h4ts-button span {
@@ -50,6 +59,65 @@
         text-align: left;
         text-decoration: underline;
         margin-top: .5em;
+      }
+      
+      .h4ts-button > span {
+        display: none;
+        font-size: 25px;
+        text-decoration: none;
+      }
+      
+      .sidebar .h4ts-button:hover {
+        background: #a4fdfe;
+        color: black;
+      }
+      
+      .sidebar .h4ts-button:hover span,
+      .sidebar .h4ts-button:active span{
+        display: inline;
+      }
+      
+      a.challenge-card {
+        display: block;
+        opacity: .8;
+      }
+      a.challenge-card:hover {
+        opacity: 1;
+        box-shadow: 0px 0px 5px black;
+      }
+
+      .nav-link {
+        font-weight: bold;
+        color: #9b4fcc;
+      }
+      
+      .nav-pills .nav-link.active {
+        color: white;
+        background-color: #9b4fcc;
+      }
+      
+      form label {
+        display: block;
+      }
+      
+      body > footer {
+        position: fixed;
+        border-top: 2px solid #b0b0b0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #efefef;
+      }
+      
+      a.nav-item { text-decoration: none; }
+
+      @media (max-width: 767.98px) {
+        body > footer {
+          position: relative;
+        }
+        
+        .hackathon-subtitle { visibility: hidden; }
+        .h4ts-button { margin: 0 auto; }
       }
     </style>
     <script>
@@ -60,64 +128,53 @@
 
       ga('create', 'UA-98312683-1', 'auto');
       ga('send', 'pageview');
-
-      document.onclick = function logGAEvents(e) {
-        console.log(e.target.id);
-
-        if(e.target.id === "addeventatc1") {
-          ga('send', {
-            hitType: 'event',
-            eventCategory: 'Save the Date',
-            eventAction: 'Click',
-            eventLabel: 'Add Event to Calendar'
-          });
-          console.log("Add to calendar event recorded");
-        }
-
-        if(e.target.id === "subscribeToMailingList") {
-          ga('send', {
-            hitType: 'event',
-            eventCategory: 'Save the Date',
-            eventAction: 'Click',
-            eventLabel: 'Subscribe to Mailing List'
-          });
-          console.log("Subscribe to Mailing List event recorded");
-        }
-      }
     </script>
   </head>
 
   <body>
-    <br />
-
-    <div class="container">
+    <div class="container" style="margin-bottom: 65px; margin-top: 15px;">
+      <header style="margin-bottom: 2em; min-height: 5px; display: none;">
+        <div style="float:right;font-size: 13px;background: #efefef;padding: 5px;/*! border-left: 1px solid #333; *//*! border-right: 1px solid #333; */border-bottom: 1px solid #b0b0b0;">
+          <a href="/accounts/login/">Sign In</a> / <a href="/accounts/register/">Sign Up</a>
+        </div>
+      </header>
+      
       <div class="row">
-        <div class="sidebar offset-md-1 col-md-3">
-          <h1 style="text-align: center"><img src="{% static '/assets/img/h4ts2018-logo.jpg' %}" alt="Hack for the Sea 2018"/></h1>
-
+        <div class="sidebar col-md-3">
           {% block sidebar %}{% endblock %}
         </div>
-        <div class="col-md-7">{% block content %}{% endblock %}</div>
+        <div class="col-md-9">{% block content %}{% endblock %}</div>
       </div>
 
-    <div class="pre-footer">
-      {% block prefooter %}{% endblock %}
+      <div class="pre-footer">
+        {% block prefooter %}{% endblock %}
+      </div>
+      
     </div>
-    <footer style="text-align: center;">
-
-      Powered by <a href="https://goo.gl/ucxdcB" target="_blank">
-        <img class="logo" width=120 src="{% static 'images/dot-tech.png' %}" alt=".TECH Domains" />
-      </a>
-
-      <a href="https://balsamiq.com" target="_blank">
-        <img class="logo" width=120 src="{% static 'images/balsamiq_logo.png' %}" alt=".TECH Domains" />
-      </a>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div style="font-weight: bold; font-size: 12px; line-height: 64px; white-space: nowrap;" class="col-md-1">Powered by:</div>
+          
+          <div class="col-md-8">
+            {% for purveyor in purveyors %}
+              <a style="margin-right: 1em;" href="{{ purveyor.url }}" target="_blank"><img class="logo" width=90 src="{{ purveyor.logo.url }}" alt="{{ purveyor.name }}" /></a>
+            {% endfor %}
+          </div>
+          <div class="col-md-3 text-right">
+            <a style='font-size: 12px; line-height: 64px;' href="/{{ hackathon.unlocode }}/contact">Have tech and want to help?</a>
+          </div>
+        </div>
+      </div>
     </footer>
-    </div>
+    
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    {% block extrascripts %}{% endblock %}
   </body>
 </html>

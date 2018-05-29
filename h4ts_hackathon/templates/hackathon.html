@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block sidebar %}
+    {% include 'components/hackathon-sidebar.html' %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    {% include 'components/hackathon-header.html' %}
+
+    <div class="row">
+        {% for challenge in challenges %}
+        <a href="/{{ hackathon.unlocode }}/challenge/{{challenge.id}}" class="col-md-6 challenge-card" style="border-radius: 8px; position: relative; border: 2px solid white; min-height: 180px; background: url('{{challenge.image.url }}'); background-size: cover; display:block;">
+            <h3 style="font-weight: 600; color: white; font-size: 19px; text-shadow: 0px 0px 6px black; padding: 12px; position: absolute; bottom: 0; left: 0; width: 100%;">{{ challenge.question }}</h3>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right" style="padding: 1em 0; font-size: 12px;">
+            <a href="{{ hackathon.unlocode }}/contact">Do you have a challenge in mind for our hackers? Get in touch!</a>
+        </div>
+    </div>
+</div>
+
+<!--<p>This year's challenges come from our beneficiary organizations:<p>-->
+
+<p>
+    {% for beneficiary in beneficiaries %}
+    <a href="{{ beneficiary.url }}" alt="{{ beneficiary.name }}">{{ beneficiary.logo.url }}</a>,
+    {% endfor %}
+</p>
+
+{% endblock %}

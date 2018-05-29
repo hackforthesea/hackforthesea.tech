@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block sidebar %}
+    {% include 'components/hackathon-sidebar.html' %}
+{% endblock %}
+
+
+{% block content %}
+  {% include 'components/hackathon-header.html' %}
+
+  <h4 style="margin: 0 2.5rem 1.33rem 0; border-top: 1px solid #e1e1e1; padding-top: 1.2rem;">Frequently Asked Questions</h4>
+    
+  <dl id="faq">
+  {% for question in questions %}
+    <dt style="cursor:pointer; margin-top: 0.33rem">
+      <span class="expansion">+</span>
+      <span class="expansion" style="display: none;">-</span>
+      {{question.question}}
+    </dt>
+    <dd style="display: none;">{{question.answer | safe }}</dd>
+  {% endfor %}
+  </dl>
+  
+  <small><a href="{{ hackathon.unlocode }}/contact">Question not answered here?</a></small>
+{% endblock %}
+
+
+{% block extrascripts %}
+  <script>
+    $("#faq > dt").on('click', function() {
+      $(this).next("dd").toggle();
+      $(this).find('.expansion').toggle();
+    });
+  </script>
+{% endblock %}

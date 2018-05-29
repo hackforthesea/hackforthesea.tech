@@ -52,28 +52,3 @@ p {
 .content .btn {
     box-shadow: 11px 9px 20px rgba(0,0,0,0.4);
 }
-
-form p > label {
-    display: block;
-}
-
-form p > span {
-    display: block;
-}
-
-form p > span, form > ul {
-    font-size: 12px;
-}
-
-body > footer {
-    border-top: 3px solid black;
-    background: white;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
-body > footer .logo {
-    max-width: 150px;
-}

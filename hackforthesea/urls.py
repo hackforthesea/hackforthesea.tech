@@ -18,29 +18,39 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.auth.views import login, logout
 from django.conf.urls.static import static
+from django.views.generic import RedirectView
 
 from beachcrab.views import beachcrabtext
 import data.urls as data_urls
 import core.views as core_views
 
 from h4ts_glossary.views import glossary_index
-from h4ts_hackathon.views import HackathonView
+from h4ts_hackathon.views import HackathonView, FAQView, ChallengeView, \
+    SponsorTicketView, ContactView, ApplyForSponsorshipView
 from h4ts_savethedate.views import SaveTheDateView
-import settings
+import hackforthesea.settings as settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
+    # 2017 Legacy Views
     url(r'^data/', include("data.urls")),
     url(r'^accounts/login', login, {'template_name': 'admin/login.html'}),
     url(r'^accounts/logout', logout),
     url(r'^accounts/register', core_views.signup),
     url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
-    url(r"^podcasts/", include("podcasting.urls")),
-    url(r"^feeds/podcasts/", include("podcasting.urls_feeds")),
     url(r"^glossary/", glossary_index),
     url(r"^beachcrabtext", beachcrabtext),
-    url(r'^(?P<code>)(?<![A-Z])[A-Z]{3}$', HackathonView.as_view(), name="hackathon"),
-    # TODO: Gloucester -> GLO alias
-    url(r'^$', SaveTheDateView.as_view(), name="home"),
+    
+    
+    # Hackathon Views
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})$', HackathonView.as_view(), name="hackathon_challenges"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/FAQ$', FAQView.as_view(), name="hackathon_faq"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/apply_for_sponsorship$', ApplyForSponsorshipView.as_view(), name="hackathon_apply_for_sponsorship"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/sponsor-ticket$', SponsorTicketView.as_view(), name="hackathon_sponsor_ticket"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/contact', ContactView.as_view(), name="hackathon_contact"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/challenge/(?P<challenge_id>.*)$', ChallengeView.as_view(), name="hackathon_challenge"),
+    url(r'^$', RedirectView.as_view(url='/GLO')),
+    
     # url(r'^', include('client.urls'), name="home"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

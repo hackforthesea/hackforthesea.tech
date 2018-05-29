@@ -36,47 +36,21 @@ class Location(models.Model):
         return self.name
 
 
-class Hackathon(models.Model):
-    name = models.CharField(max_length=512)
-    location = models.ForeignKey('Location')
-    start_time = models.DateTimeField(default=datetime.now, blank=True)
-    end_time = models.DateTimeField(default=datetime.now, blank=True)
+# class Participant(models.Model):
+#     name = models.CharField(max_length=512)
+#     team = models.ManyToManyField(Team)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
 
 
-class Team(models.Model):
-    name = models.CharField(max_length=512)
-    hackathon = models.ForeignKey('Hackathon')
+# class Submission(models.Model):
+#     name = models.CharField(max_length=512)
+#     image_url = models.URLField(max_length=512)
+#     github_url = models.URLField(max_length=512)
+#     license = models.CharField
+#     description = models.TextField()
+#     team = models.ForeignKey('Team', on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.name
-
-
-class Participant(models.Model):
-    name = models.CharField(max_length=512)
-    team = models.ManyToManyField(Team)
-
-    def __str__(self):
-        return self.name
-
-
-class Submission(models.Model):
-    name = models.CharField(max_length=512)
-    image_url = models.URLField(max_length=512)
-    github_url = models.URLField(max_length=512)
-    license = models.CharField
-    description = models.TextField()
-    team = models.ForeignKey('Team')
-
-    def __str__(self):
-        return self.name
-
-
-class FrequentlyAskedQuestion(models.Model):
-    question = models.TextField()
-    answer = models.TextField()
-
-    def __str__(self):
-        return self.question
+#     def __str__(self):
+#         return self.name

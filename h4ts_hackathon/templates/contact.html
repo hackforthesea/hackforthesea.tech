@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block sidebar %}
+    {% include 'components/hackathon-sidebar.html' %}
+{% endblock %}
+
+
+{% block content %}
+  {% include 'components/hackathon-header.html' %}
+
+  <h4 style="margin: 0 2.5rem 1.33rem 0; border-top: 1px solid #e1e1e1; padding-top: 1.2rem;">Contact the Crew</h4>
+    
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}
+
+
+{% block extrascripts %}
+  <script>
+    $("#faq > dt").on('click', function() {
+      $(this).next("dd").toggle();
+      $(this).find('.expansion').toggle();
+    });
+  </script>
+{% endblock %}
