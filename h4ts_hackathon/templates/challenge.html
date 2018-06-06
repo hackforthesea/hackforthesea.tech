@@ -16,20 +16,11 @@
             </div>
             
             
-            <div class="description" style="font-size: 14px; margin-top: 1em;">
+            <div class="challenge-description" style="font-size: 17px; margin-top: 1em;">
                 {{ challenge.description | safe }}
             </div>
         </div>
-        <div class="col-md-4">
-            <h5>Data Sets and Tools</h5>
-            
-            <dl>
-            {% for dataset in challenge.datasets.all %}
-                <dt><a href="{{ dataset.url }}">{{ dataset.title }}</a></dt>
-                <dd>{% if dataset.note %}{{ dataset.note }}{% endif %}</dd>
-            {% endfor %}
-            </dl>
-
+        <div class="col-md-4 data-sets">
             {% if beneficiaries.count > 1 %}
                 <h5>Beneficiaries</h5>
             {% else %}
@@ -40,6 +31,15 @@
                     <img style="max-width: 100%" src="{{beneficiary.logo.url }}" alt="{{ beneficiary }}" />
                 </a>
             {% endfor %}
+            
+            <h5 style="margin: 1.25em 0 1em 0;">Data Sets and Tools</h5>
+            
+            <dl>
+            {% for dataset in challenge.datasets.all %}
+                <dt style="font-size: 13px;"><a href="{{ dataset.url }}">{{ dataset.title }}</a></dt>
+                <dd style="font-size: 12px;">{% if dataset.note %}{{ dataset.note }}{% endif %}</dd>
+            {% endfor %}
+            </dl>
         </div>
     </div>
 </div>
