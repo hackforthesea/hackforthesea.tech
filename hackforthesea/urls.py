@@ -26,30 +26,33 @@ import core.views as core_views
 
 from h4ts_glossary.views import glossary_index
 from h4ts_hackathon.views import HackathonView, FAQView, ChallengeView, \
-    SponsorTicketView, ContactView, ApplyForSponsorshipView
+    SponsorTicketView, ContactView, ApplyForSponsorshipView, LodgingView
 from h4ts_savethedate.views import SaveTheDateView
 import hackforthesea.settings as settings
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-
-    # 2017 Legacy Views
-    url(r'^data/', include("data.urls")),
     url(r'^accounts/login', login, {'template_name': 'admin/login.html'}),
     url(r'^accounts/logout', logout),
     url(r'^accounts/register', core_views.signup),
-    url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
-    url(r"^glossary/", glossary_index),
-    url(r"^beachcrabtext", beachcrabtext),
     
+    url(r'^admin/', admin.site.urls),
+
+    url(r'^marine-hacker-sandbox/', include('h4ts_sandbox.urls')),
+    
+    # 2017 Legacy Views
+    # url(r'^data/', include("data.urls")),
+    # url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    # url(r"^glossary/", glossary_index),
+    # url(r"^beachcrabtext", beachcrabtext),
     
     # Hackathon Views
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})$', HackathonView.as_view(), name="hackathon_challenges"),
-    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/FAQ$', FAQView.as_view(), name="hackathon_faq"),
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/apply_for_sponsorship$', ApplyForSponsorshipView.as_view(), name="hackathon_apply_for_sponsorship"),
-    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/sponsor-ticket$', SponsorTicketView.as_view(), name="hackathon_sponsor_ticket"),
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/contact', ContactView.as_view(), name="hackathon_contact"),
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/challenge/(?P<challenge_id>.*)$', ChallengeView.as_view(), name="hackathon_challenge"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/FAQ$', FAQView.as_view(), name="hackathon_faq"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/lodging', LodgingView.as_view(), name="hackathon_lodging"),
+    url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/sponsor-ticket$', SponsorTicketView.as_view(), name="hackathon_sponsor_ticket"),
     url(r'^$', RedirectView.as_view(url='/GLO')),
     
     # url(r'^', include('client.urls'), name="home"),

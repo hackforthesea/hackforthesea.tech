@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block sidebar %}
+    {% include 'components/global-sidebar.html' %}
+    
+    {% if signup_success %}
+        <p style="padding: 0.5em; background: lightgreen; font-weight: bold;">Thank you for your interest! We will be in touch as soon as we are ready.</p>
+    {% else %}
+        <p>
+            <strong>Our goal is to create lasting, tangible solutions for our
+            beneficiary organizations.</strong>
+        </p>
+        <p>
+            The Marine Hacker Sandbox is launching soon. Enter your email below
+            to be notified when you can start building real solutions for our oceans.
+        </p>
+    
+        <form role="form" action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    {% endif %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <small class="hackathon-subtitle"><em>Brought to you by the makers of PoachStopper, winner of the 2018 Global Fishackathon</em></small>
+            <h2 style="margin-bottom: 0;top: -6px;position: relative;">The Marine Hacker Sandbox</h2>
+            <p>$25/mo gives your project several times that in cloud credits, SaaS subscriptions, and more...</p>
+        </div>
+    </div>
+    
+    <!--<div class="row">-->
+    <!--    <nav class="nav col-md-12 nav-pills nav-fill">-->
+    <!--        <a class="nav-item nav-link{% if 'hackathon_challenges' in current_url %} active{% endif %}" href="/{{ hackathon.unlocode }}">Challenges</a>-->
+    <!--        <a class="nav-item nav-link{% if 'hackathon_faq' in current_url %} active{% endif %}" href="/{{ hackathon.unlocode }}/FAQ">FAQ</a>-->
+    <!--        <a class="nav-item nav-link{% if 'hackathon_sponsor' in current_url %} active{% endif %}" href="/{{ hackathon.unlocode }}/sponsor-ticket">Sponsor a Ticket</a>-->
+    <!--        <a class="nav-item nav-link{% if 'hackathon_contact' in current_url %} active{% endif %}" href="/{{ hackathon.unlocode }}/contact">Contact</a>-->
+    <!--    </nav>-->
+    <!--</div>-->
+    
+    <h4 style="margin: 0 2.5rem 1.33rem 0; border-top: 1px solid #e1e1e1; padding-top: 1.2rem;">Get the Tech Your Marine Science Project Needs</h4>
+    
+    <p>
+        Our “Hacker” Membership Tier, gives your team access to the technology
+        it needs to succeed, for a fraction of the cost. Here’s a taste of what’s inside:
+    </p>
+
+    <div class="row">
+        <div class="col-md-4 offset-md-1">
+            <img style="max-width: 100%;" src="{% static 'images/aws-logo.png' %}" alt="Amazon Web Services"/>
+        </div>
+        <div class="col-md-5" style="margin-bottom: 1em;">
+            <h5>Double your Dollars in AWS Cloud Credits</h5>
+            Receive up to $50 of AWS credits each month
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 1em;">
+        <div class="col-md-4 offset-md-1">
+            <img style="max-width: 100%;" src="{% static 'images/balsamiq_logo.png' %}" alt="Balsamiq - Rapid Prototyping"/>
+        </div>
+        <div class="col-md-5">
+            <h5>Rapid Prototyping Software - No Coding Required</h5>
+            Gain access to an extended trial Balsamiq Cloud, allowing you to prototype your idea for three months.
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 1em;">
+        <div class="col-md-4 offset-md-1">
+            <img style="max-width: 100%;" src="{% static 'images/microshare-logo.png' %}" alt="Microshare - Unleash the Data"/>
+        </div>
+        <div class="col-md-5">
+            <h5>Data Lake Access</h5>
+            Have effectively unlimited storage for your IoT and big data projects inside of Microshare’s database
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 1em;">
+        <div class="col-md-4 offset-md-1">
+            <img style="max-width: 100%;" src="{% static 'images/jupyterhub-logo.png' %}" alt="JupyterHub"/>
+        </div>
+        <div class="col-md-5">
+            <h5>JupyterHub Access</h5>
+            Collaborate on reproducible science with your peers on our hosted JupyterHub Notebook server.
+        </div>
+    </div>
+
+    <p>...plus access to our online communities, meetups, webinars, trainings, and more.</p>
+{% endblock %}
+
+{% block extrascripts %}
+{% endblock %}

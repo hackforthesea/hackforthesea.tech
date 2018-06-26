@@ -4,3 +4,4 @@ db.sqlite3
 *.pyc
 jupyterhub.sqlite
 jupyterhub_cookie_secret
+media

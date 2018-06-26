@@ -3,14 +3,16 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
+from ordered_model.admin import OrderedModelAdmin
+
 from .models import *
 
 class BeneficiaryOrganizationAdmin(admin.ModelAdmin):
     pass
 
 
-class ChallengeStatementAdmin(admin.ModelAdmin):
-    pass
+class ChallengeStatementAdmin(OrderedModelAdmin):
+    list_display = ('question', 'order', 'move_up_down_links')
 
 
 class DataSetAdmin(admin.ModelAdmin):

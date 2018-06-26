@@ -88,6 +88,10 @@ class FAQView(BaseHackathonView):
 
 class HackathonView(BaseHackathonView):
     template_name = "hackathon.html"
+    
+    
+class LodgingView(BaseHackathonView):
+    template_name = "lodging.html"
 
 
 class SponsorTicketView(BaseHackathonView):

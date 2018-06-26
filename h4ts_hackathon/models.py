@@ -6,6 +6,7 @@ from datetime import datetime
 from django.contrib.auth.models import User
 from django.db import models
 
+from ordered_model.models import OrderedModel
 
 
 class BeneficiaryOrganization(models.Model):
@@ -17,7 +18,7 @@ class BeneficiaryOrganization(models.Model):
         return self.name
 
 
-class ChallengeStatement(models.Model):
+class ChallengeStatement(OrderedModel):
     question = models.CharField(max_length=320)
     image = models.FileField(upload_to='challenge_imgages/', null=True)
     description = models.TextField()
@@ -27,6 +28,9 @@ class ChallengeStatement(models.Model):
 
     def __str__(self):
         return self.question
+        
+    class Meta(OrderedModel.Meta):
+        pass
 
 
 class DataSet(models.Model):

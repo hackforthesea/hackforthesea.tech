@@ -1,5 +1,7 @@
 #!/bin/bash
 
+./manage.py collectstatic --noinput
+
 # Start Gunicorn processes
 echo Starting Gunicorn.
 exec gunicorn hackforthesea.wsgi:application \
