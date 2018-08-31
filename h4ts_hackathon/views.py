@@ -21,7 +21,7 @@ class BaseHackathonView(TemplateView):
         context['current_url'] = resolve(self.request.path_info).url_name
         context['hackathon'] = Hackathon.objects.get(unlocode=kwargs.get("code"))
         context['challenges'] = ChallengeStatement.objects.filter(hackathon=context['hackathon'])
-        context['questions'] = FrequentlyAskedQuestion.objects.all()
+        context['questions'] = FrequentlyAskedQuestion.objects.filter(hackathon=context['hackathon'])
         context['purveyors'] = Purveyor.objects.filter(in_footer=True)
     
         if("challenge_id" in kwargs):

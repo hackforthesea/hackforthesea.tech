@@ -9,13 +9,13 @@
 <div class="row">
     <div class="col-6 col-md-12">
         <h3 style="letter-spacing: -1px; font-size: 19px; line-height: 14px; white-space: nowrap; text-align: center;">Sep 21-23, 2018</h3>
-        <h3 style="letter-spacing: -1px; font-size: 19px; line-height: 18px; white-space: nowrap; text-align: center;">American Legion</h3>
-        <h3 style="letter-spacing: -1px; font-size: 21px; line-height: 16px; white-space: nowrap; text-align: center;">Gloucester, MA</h3>
+        <h3 style="letter-spacing: -1px; font-size: 19px; line-height: 18px; white-space: nowrap; text-align: center;">{{ hackathon.address }}</h3>
+        <h3 style="letter-spacing: -1px; font-size: 21px; line-height: 16px; white-space: nowrap; text-align: center;">{{ hackathon.city }}, {{ hackathon.state }}</h3>
     </div>
     
     <div class="col-6 col-md-12">
         <a
-            href="https://www.eventbrite.com/e/hack-for-the-sea-2018-tickets-45603855359"
+            href="{{ hackathon.ticket_link }}"
             class='btn h4ts-button'
             style="display: block; max-width: 184px; color: #f3f3f3; box-shadow: 1px 2px 2px #0f210e; line-height: 43px;">
             <span>🎉</span> Register <span>🎉</span> 
@@ -23,9 +23,11 @@
     </div>
 </div>
 
-<p style="text-align: center; margin-top: 0.5em;">
-    $25 Early Bird Until Aug 1
-</p>
+{% if hackathon.unlocode == "GLO" %}
+    <p style="text-align: center; margin-top: 0.5em;">
+        $25 Early Bird Until Aug 1
+    </p>
+{% endif %}
 
 <div style="font-size: 14px;">
     <strong>Can't make it?</strong>

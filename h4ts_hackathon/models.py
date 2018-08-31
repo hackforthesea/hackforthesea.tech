@@ -47,6 +47,10 @@ class Hackathon(models.Model):
     name = models.CharField(max_length=512)
     unlocode = models.CharField(max_length=5, unique=True)
     description = models.TextField()
+    ticket_link = models.URLField()
+    address = models.CharField(max_length=512)
+    city = models.CharField(max_length=512)
+    state = models.CharField(max_length=2)
     logo = models.FileField(upload_to='hackathon_logos/', null=True)
     start_time = models.DateTimeField(default=datetime.now, blank=True)
     end_time = models.DateTimeField(default=datetime.now, blank=True)
@@ -77,6 +81,7 @@ class Team(models.Model):
 class FrequentlyAskedQuestion(models.Model):
     question = models.TextField()
     answer = models.TextField()
+    hackathon = models.ForeignKey(Hackathon, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.question
