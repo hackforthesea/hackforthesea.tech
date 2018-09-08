@@ -45,7 +45,7 @@ class ContactView(BaseHackathonView):
     
     def post(self, request, **kwargs):
         form = self.form_class(data=request.POST)
-    
+
         if form.is_valid():
             contact_name = request.POST.get('contact_name', '')
             contact_email = request.POST.get('contact_email', '')
@@ -54,19 +54,22 @@ class ContactView(BaseHackathonView):
             # Email the profile with the
             # contact information
             template = get_template('contact_template.txt')
-            context = {
+            email_context = {
                 'contact_name': contact_name,
                 'contact_email': contact_email,
                 'form_content': form_content,
             }
-            content = template.render(context)
+            content = template.render(email_context)
+
+
+            hackathon = self.get_context_data(**kwargs)["hackathon"]
+            emails = hackathon.organizers.values_list("email", flat=True)
 
             email = EmailMessage(
                 "New contact form submission",
                 content,
-                'mark@mrh.io',
-                # "Your website" +'',
-                ['henderson.mark@gmail.com'],
+                "mark@mrh.io",
+                emails[::1],
                 # headers = {'Reply-To': contact_email }
             )
             email.send()
