@@ -20,7 +20,6 @@ from django.contrib.auth.views import login, logout
 from django.conf.urls.static import static
 from django.views.generic import RedirectView
 
-from beachcrab.views import beachcrabtext
 import data.urls as data_urls
 import core.views as core_views
 
@@ -43,7 +42,6 @@ urlpatterns = [
     # url(r'^data/', include("data.urls")),
     # url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     # url(r"^glossary/", glossary_index),
-    # url(r"^beachcrabtext", beachcrabtext),
     
     # Hackathon Views
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})$', HackathonView.as_view(), name="hackathon_challenges"),
