@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# pip install -r /requirements.txt
+# ./manage.py migrate
+# ./manage.py collectstatic --noinput
+
+# Start Gunicorn processes
+echo Starting Gunicorn.
+exec gunicorn hackforthesea.wsgi:application \
+    --bind 0.0.0.0:8000 \
+    --reload \
+    --workers 3
