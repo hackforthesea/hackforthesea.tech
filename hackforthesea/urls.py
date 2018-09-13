@@ -23,10 +23,8 @@ from django.views.generic import RedirectView
 import data.urls as data_urls
 import core.views as core_views
 
-from h4ts_glossary.views import glossary_index
 from h4ts_hackathon.views import HackathonView, FAQView, ChallengeView, \
     SponsorTicketView, ContactView, ApplyForSponsorshipView, LodgingView
-from h4ts_savethedate.views import SaveTheDateView
 import hackforthesea.settings as settings
 
 urlpatterns = [
@@ -41,7 +39,6 @@ urlpatterns = [
     # 2017 Legacy Views
     # url(r'^data/', include("data.urls")),
     # url(r'^oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
-    # url(r"^glossary/", glossary_index),
     
     # Hackathon Views
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})$', HackathonView.as_view(), name="hackathon_challenges"),
