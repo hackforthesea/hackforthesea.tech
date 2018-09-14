@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extracss %}
+.hackathon { 
+  text-align: center;
+}
+
+.hackathon a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hackathon img {
+  max-height: 226px;
+  max-width: 100%;
+  margin: 0 0 2em;
+}
+
+.hackathon h1 {
+
+}
+
+.hackathon h1 small {
+  display: block;
+}
+{% endblock %}
+
+{% block nosidebar %}
+<h1 style="text-align: center; font-size: 34px;">September 21-23, 2018</h1>
+<div class="row" style='margin-top: 5em'>
+  <div class="col-md-4 hackathon">
+    <a href="/SEA">
+      <img src="{% static 'images/SEA.jpg' %}" alt="Hack for the Sea: Seattle" />
+      <h1>[ SEA ]<small>Seattle</small></h1>
+    </a>
+  </div>
+  <div class="col-md-4 hackathon">
+    <a href="/GLO">
+      <img style='max-width:100%'
+           src="{% static 'hackathon_logos/Hack_for_the_sea_-_03_Updated-01_x8Btjox_eCGSnez.jpg' %}" alt="Hack for the Sea: Gloucester" />
+      <h1>[ GLO ]<small>Gloucester</small></h1>
+    </a>
+  </div>
+  <div class="col-md-4 hackathon">
+    <a href="/HNL">
+      <img style="max-width:100%;"
+           src="{% static 'images/HNL.jpg' %}" alt="Hack for the Sea: Seattle" />
+      <h1>[ HNL ]<small>Honolulu</small></h1>
+  </a>
+  </div>
+</div>
+{% endblock %}

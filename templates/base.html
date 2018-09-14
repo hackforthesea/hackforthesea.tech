@@ -120,6 +120,10 @@
         .h4ts-button { margin: 0 auto; }
       }
     </style>
+<style>
+{% block extracss %}
+{% endblock %}
+</style>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -139,12 +143,14 @@
         </div>
       </header>
       
-      <div class="row">
-        <div class="sidebar col-md-3">
-          {% block sidebar %}{% endblock %}
+      {% block nosidebar %}
+        <div class="row">
+          <div class="sidebar col-md-3">
+            {% block sidebar %}{% endblock %}
+          </div>
+          <div class="col-md-9">{% block content %}{% endblock %}</div>
         </div>
-        <div class="col-md-9">{% block content %}{% endblock %}</div>
-      </div>
+      {% endblock %}
 
       <div class="pre-footer">
         {% block prefooter %}{% endblock %}
