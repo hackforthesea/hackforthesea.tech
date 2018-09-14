@@ -1,0 +1,29 @@
+version: '3'
+services:
+  django:
+    image: hackforthesea/www:dev
+    networks:
+      - h4ts
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/app
+    expose:
+      - "8000"
+  db:
+    image: postgres
+    networks:
+      - h4ts
+  nginx:
+    image: nginx
+    networks:
+      - h4ts
+    ports:
+      - "80:80"
+    links:
+      - django:django
+    volumes:
+      - ./scripts/default.conf:/etc/nginx/conf.d/default.conf
+
+networks:
+  h4ts:
