@@ -23,8 +23,7 @@ from django.views.generic import RedirectView
 import data.urls as data_urls
 import core.views as core_views
 
-from h4ts_hackathon.views import HackathonView, FAQView, ChallengeView, \
-    SponsorTicketView, ContactView, ApplyForSponsorshipView, LodgingView
+from h4ts_hackathon.views import *
 import hackforthesea.settings as settings
 
 urlpatterns = [
@@ -48,7 +47,6 @@ urlpatterns = [
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/FAQ$', FAQView.as_view(), name="hackathon_faq"),
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/lodging', LodgingView.as_view(), name="hackathon_lodging"),
     url(r'^(?P<code>(?<![A-Z])[A-Z]{3})/sponsor-ticket$', SponsorTicketView.as_view(), name="hackathon_sponsor_ticket"),
-    url(r'^$', RedirectView.as_view(url='/GLO')),
     
-    # url(r'^', include('client.urls'), name="home"),
+    url(r'^', SplashView.as_view(), name="splash"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

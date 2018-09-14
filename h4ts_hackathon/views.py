@@ -19,17 +19,19 @@ class BaseHackathonView(TemplateView):
         context = super(BaseHackathonView, self).get_context_data(**kwargs)
 
         context['current_url'] = resolve(self.request.path_info).url_name
-        context['hackathon'] = Hackathon.objects.get(unlocode=kwargs.get("code"))
-        context['challenges'] = ChallengeStatement.objects.filter(hackathon=context['hackathon'])
-        context['questions'] = FrequentlyAskedQuestion.objects.filter(hackathon=context['hackathon'])
         context['purveyors'] = Purveyor.objects.filter(in_footer=True)
-    
+
+        if kwargs.get("code", False):
+            context['hackathon'] = Hackathon.objects.get(unlocode=kwargs.get("code"))
+            context['challenges'] = ChallengeStatement.objects.filter(hackathon=context['hackathon'])
+            context['questions'] = FrequentlyAskedQuestion.objects.filter(hackathon=context['hackathon'])
+
         if("challenge_id" in kwargs):
             context['challenge'] = ChallengeStatement.objects.get(id=kwargs.get('challenge_id'))
             context['beneficiaries'] =  context['challenge'].beneficiaries.all()
-    
+
         return context
-        
+
 
 class ApplyForSponsorshipView(BaseHackathonView):
     template_name = "apply-for-sponsorship.html"
@@ -91,8 +93,12 @@ class FAQView(BaseHackathonView):
 
 class HackathonView(BaseHackathonView):
     template_name = "hackathon.html"
-    
-    
+
+
+class SplashView(BaseHackathonView):
+    template_name = "splash.html"
+
+
 class LodgingView(BaseHackathonView):
     template_name = "lodging.html"
 

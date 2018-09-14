@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'data',
-    'client',
     'core',
     'harvest',
     'oauth2_provider',
@@ -76,7 +75,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'client.context_processors.site'
             ],
         },
     },
